@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batman - The Dark Knight</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <i class="fas fa-bat"></i>
+                    <span>BATMAN</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#hero" class="nav-link">Главная</a></li>
+                    <li><a href="#about" class="nav-link">О персонаже</a></li>
+                    <li><a href="#movies" class="nav-link">Фильмы</a></li>
+                    <li><a href="#history" class="nav-link">История</a></li>
+                    <li><a href="#games" class="nav-link">Игры</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">THE DARK KNIGHT</h1>
+                <h2 class="hero-subtitle">Брюс Уэйн / Бэтмен</h2>
+                <p class="hero-description">
+                    Миллиардер, филантроп и защитник Готэма. После трагической гибели родителей 
+                    Брюс Уэйн посвятил свою жизнь борьбе с преступностью, став символом страха 
+                    для преступников и надежды для невинных граждан.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Защитник Готэма</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-brain"></i>
+                        <span>Гениальный детектив</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-fist-raised"></i>
+                        <span>Мастер боевых искусств</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="bat-signal"></div>
+                <img src="https://disgustingmen.com/wp-content/uploads/2024/08/batman_caped_crusader_04.jpg" alt="Batman" class="batman-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section-title">О ПЕРСОНАЖЕ</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-user-secret"></i>
+                    </div>
+                    <h3>Личность</h3>
+                    <p>Брюс Уэйн — глава корпорации Wayne Enterprises. Скрывает свою личность под маской летучей мыши, используя страх как оружие против преступников Готэма.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Технологии</h3>
+                    <p>Бэтмобиль, Бэтвинг и множество гаджетов, созданных благодаря передовым технологиям Wayne Tech. Каждый инструмент разработан для борьбы с преступностью.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Союзники</h3>
+                    <p>Альфред Пенниуорт — верный дворецкий и наставник. Джеймс Гордон — комиссар полиции Готэма. Робин, Найтвинг и другие члены Бэт-семьи.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-skull"></i>
+                    </div>
+                    <h3>Враги</h3>
+                    <p>Джокер, Бэйн, Двуликий, Пугало, Женщина-кошка и многие другие злодеи, каждый из которых представляет уникальную угрозу для Готэма.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Movies Section -->
+    <section id="movies" class="movies section">
+        <div class="container">
+            <h2 class="section-title">ФИЛЬМЫ И МУЛЬТФИЛЬМЫ</h2>
+            <div class="movies-slider">
+                <button class="slider-btn prev-btn" onclick="moveSlide(-1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="slider-wrapper">
+                    <div class="slider-track" id="sliderTrack">
+                        <div class="movie-card">
+                            <div class="movie-poster">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTXlbQ06WPrBuRWy7_wGgkEjBkX_zOGTyX_WQXQ5YqWA&s=10" alt="The Dark Knight">
+                                <div class="movie-overlay">
+                                    <h3>Тёмный рыцарь</h3>
+                                    <p>2008</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie-card">
+                            <div class="movie-poster">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuAAX3PNXHGPFgivfs0s4seT_2p7JlYSPrtSuBCc8V6eSpAfGz0IuopD-v&s=10" alt="Batman Begins">
+                                <div class="movie-overlay">
+                                    <h3>Бэтмен: Начало</h3>
+                                    <p>2005</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie-card">
+                            <div class="movie-poster">
+                                <img src="https://upload.wikimedia.org/wikipedia/ru/b/b2/The_Batman_Poster.jpg?utm_source=ru.wikipedia.org&utm_campaign=index&utm_content=original" alt="The Batman">
+                                <div class="movie-overlay">
+                                    <h3>Бэтмен</h3>
+                                    <p>2022</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie-card">
+                            <div class="movie-poster">
+                                <img src="https://www.kino-teatr.ru/movie/posters/big/4/9/28494.jpg" alt="Batman Returns">
+                                <div class="movie-overlay">
+                                    <h3>Бэтмен возвращается</h3>
+                                    <p>1992</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie-card">
+                            <div class="movie-poster">
+                                <img src="https://upload.wikimedia.org/wikipedia/ru/f/f0/Batman_v_Superman_Dawn_of_Justice.jpg?utm_source=ru.wikipedia.org&utm_campaign=index&utm_content=original" alt="Batman v Superman">
+                                <div class="movie-overlay">
+                                    <h3>Бэтмен против Супермена</h3>
+                                    <p>2016</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="movie-card">
+                            <div class="movie-poster">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeqX0ivDQro5obEj2WtKBiBHLDPkEbfCWh6l-lD8t_aCYDgOSAshNuI0g&s=10" alt="Batman Animated">
+                                <div class="movie-overlay">
+                                    <h3>Бэтмен: Анимационный сериал</h3>
+                                    <p>1992-1995</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="slider-btn next-btn" onclick="moveSlide(1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="slider-dots" id="sliderDots"></div>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section id="history" class="history section">
+        <div class="container">
+            <h2 class="section-title">ИСТОРИЯ СОЗДАНИЯ</h2>
+            <div class="history-content">
+                <div class="history-text">
+                    <p class="history-intro">
+                        Бэтмен был создан художником Бобом Кейном и писателем Биллом Фингером. 
+                        Впервые персонаж появился в комиксе <strong>Detective Comics #27</strong> в мае 1939 года.
+                    </p>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-year">1939</div>
+                            <div class="timeline-content">
+                                <h4>Первое появление</h4>
+                                <p>Бэтмен дебютировал в Detective Comics #27 как "The Bat-Man". Изначально персонаж был мрачным и жестоким.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">1940</div>
+                            <div class="timeline-content">
+                                <h4>Появление Робина</h4>
+                                <p>Введен Робин (Дик Грейсон), чтобы сделать образ Бэтмена более мягким и привлекательным для юной аудитории.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">1986</div>
+                            <div class="timeline-content">
+                                <h4>Тёмный рыцарь возвращается</h4>
+                                <p>Фрэнк Миллер выпустил культовый графический роман, вернув Бэтмену его мрачную сущность.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">1989</div>
+                            <div class="timeline-content">
+                                <h4>Первый фильм</h4>
+                                <p>Тим Бёртон снял первый полнометражный фильм с Майклом Китоном в главной роли.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="history-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuuLhaMqXsQ9YRIHzNkpvyl6-nmkqByl3-mfnweMGJxyaYZtC6MBW_zY3p&s=10" alt="Batman History">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section id="games" class="games section">
+        <div class="container">
+            <h2 class="section-title">ИГРЫ</h2>
+            <div class="games-grid">
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000045904/8ef8f6a6208734566a44dc1418f632dc5136cce77e6b63f8524722335f98dae8" alt="Arkham Asylum">
+                    </div>
+                    <div class="game-info">
+                        <h3>Batman: Arkham Asylum</h3>
+                        <p class="game-year">2009</p>
+                        <p class="game-desc">Легендарная игра, где Бэтмен должен остановить Джокера, захватившего лечебницу Аркхем.</p>
+                        <div class="game-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/200260/capsule_616x353.jpg?t=1745964057" alt="Arkham City">
+                    </div>
+                    <div class="game-info">
+                        <h3>Batman: Arkham City</h3>
+                        <p class="game-year">2011</p>
+                        <p class="game-desc">Открытый мир Готэма, где Бэтмен расследует заговор Протокола 10.</p>
+                        <div class="game-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/208650/capsule_616x353.jpg?t=1745534372" alt="Arkham Knight">
+                    </div>
+                    <div class="game-info">
+                        <h3>Batman: Arkham Knight</h3>
+                        <p class="game-year">2015</p>
+                        <p class="game-desc">Финальная часть трилогии с возможностью управлять Бэтмобилем.</p>
+                        <div class="game-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-bat"></i>
+                    <span>BATMAN</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#hero">Главная</a>
+                    <a href="#about">О персонаже</a>
+                    <a href="#movies">Фильмы</a>
+                    <a href="#history">История</a>
+                    <a href="#games">Игры</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Batman Fan Site. Все права защищены.</p>
+                <p>DC Comics и все связанные персонажи являются товарными знаками DC Comics.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
